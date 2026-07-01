@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Love Proposal ❤️</title>
+
+<style>
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+font-family:Arial;
+}
+
+.card{
+width:330px;
+min-height:450px;
+background:white;
+border-radius:30px;
+padding:25px;
+text-align:center;
+box-shadow:0 0 25px #999;
+position:relative;
+}
+
+h2{
+color:#ff3366;
+}
+
+p{
+font-size:18px;
+line-height:1.7;
+color:#444;
+}
+
+button{
+background:#ff3366;
+color:white;
+border:none;
+padding:12px 30px;
+border-radius:30px;
+font-size:17px;
+}
+
+.corner{
+position:absolute;
+font-size:14px;
+color:#ff3366;
+}
+
+.top{
+right:15px;
+top:15px;
+}
+
+.bottom{
+left:15px;
+bottom:80px;
+}
+
+.heart{
+font-size:45px;
+animation:beat 1s infinite;
+}
+
+@keyframes beat{
+50%{transform:scale(1.2);}
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="heart">❤️</div>
+
+<h2 id="title">Suno mujhe tumse kuch kehna hai... ❤️</h2>
+
+<p id="text">
+Bas ek chhoti si baat hai jo dil se kehni hai 🥺✨
+</p>
+
+<div class="corner top" id="corner">
+👀 Upar kone mai dekho
+</div>
+
+<button onclick="next()">Next Page 💕</button>
+
+</div>
+
+
+<script>
+
+let page=0;
+
+let data=[
+
+[
+"Suno mujhe tumse kuch kehna hai... ❤️",
+"Bas ek chhoti si baat hai jo dil se kehni hai 🥺❤️",
+"👀 Upar kone mai dekho"
+],
+
+[
+"Woh mujhe kehna tha ki... 💕",
+"Ki tum meri zindagi ka sabse khoobsurat hissa ho 🌍❤️<br><br>Tumhari ek smile mera din special bana deti hai 😊✨",
+"👇 Niche corner pr dekho"
+],
+
+[
+"Mai tumse yeh kehna chahta hu ❤️",
+"Tumhare sath mai saari zindagi rehna chahta hu 💍❤️<br><br>Kya tum mere iss khwab ko sach karne mai mera sath dogi? 🥺🤍",
+"✨ Dil se ek jawab ka intezar hai ✨"
+],
+
+[
+"Mujhe tumse yeh baat bahut din se kehni thi... ❤️",
+"Par samajh nahi aaya kaise kahu 🥺<br><br>"+
+"Main perfect nahi hoon,<br>"+
+"par tumhari care karna jaanta hoon ❤️<br><br>"+
+"Agar tum chaho,<br>"+
+"toh main woh banda banna chahta hoon jo hamesha tumhare saath khada ho 🤝❤️<br><br>"+
+"Toh kya tum mera yeh proposal accept karogi? 💍🥰<br><br>"+
+"I Love You meri pyari wife ❤️🦋⃟𝓤𝓜𝓐",
+"🥰 Forever Together ❤️"
+]
+
+];
+
+
+function next(){
+
+page++;
+
+if(page<data.length){
+
+document.getElementById("title").innerHTML=data[page][0];
+
+document.getElementById("text").innerHTML=data[page][1];
+
+document.getElementById("corner").innerHTML=data[page][2];
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
